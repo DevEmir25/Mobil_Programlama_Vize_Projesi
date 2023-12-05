@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextAdet"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="How many progress bar do you want?"
+        android:inputType="number"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextMin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextAdet"
+        android:layout_marginTop="8dp"
+        android:hint="Minimum Value"
+        android:inputType="number"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextMax"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextMin"
+        android:layout_marginTop="8dp"
+        android:hint="Maximum Value"
+        android:inputType="number"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonGenerate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextMax"
+        android:layout_marginTop="16dp"
+        android:text="Generate"
+        android:onClick="generateProgressBars"
+        tools:ignore="HardcodedText" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonGenerate"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/containerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

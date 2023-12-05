@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="base_options">
+        <item>Binary</item>
+        <item>Octal</item>
+        <item>Hexadecimal</item>
+    </string-array>
+
+    <string-array name="byte_conversion_options">
+        <item>Kilobyte</item>
+        <item>Byte</item>
+        <item>Kibibyte</item>
+        <item>Bit</item>
+    </string-array>
+
+</resources>
